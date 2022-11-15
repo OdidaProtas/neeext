@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Stack sx={{ bgcolor: "gray", width: 600, p: 7, borderRadius: "4px", backdropFilter: "blur(4px)" }} spacing={2}>
+        <Stack sx={{ bgcolor: "gray", width: {lg:600}, p: 7, borderRadius: "4px", backdropFilter: "blur(4px)" }} spacing={2}>
           <Typography variant="h6" >Image generator{/*  */}</Typography>
           <Typography variant='caption' >Search products to generate images for</Typography>
           <Box>

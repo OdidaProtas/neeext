@@ -76,7 +76,7 @@ export default function BasicTabs() {
         return imageArray?.[0] || "";
     };
 
-    const download = (e:any, name:any) => {
+    const download = (e: any, name: any) => {
         fetch(e.target.href, {
             method: "GET",
             headers: {}
@@ -130,7 +130,7 @@ export default function BasicTabs() {
                         const discount = price - sale_price
 
                         return (
-                            <Grid key={p.id} item xs={4} >
+                            <Grid key={p.id} item lg={4} md={6} xs={12} >
                                 <img width={220} height={400}
                                     src={`/api/product?img=${baseImage}&name=${p.name}&sale_price=${sale_price}&category=${category}&price=${price}&discount=${discount}`}
                                     alt="" />
