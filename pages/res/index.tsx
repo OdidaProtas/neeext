@@ -76,7 +76,7 @@ export default function BasicTabs() {
         return imageArray?.[0] || "";
     };
 
-    const download = (e, namee) => {
+    const download = (e:any, name:any) => {
         fetch(e.target.href, {
             method: "GET",
             headers: {}
