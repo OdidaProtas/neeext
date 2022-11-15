@@ -86,7 +86,7 @@ export default function BasicTabs() {
                     const url = window.URL.createObjectURL(new Blob([buffer]));
                     const link = document.createElement("a");
                     link.href = url;
-                    link.setAttribute("Image", "image.png"); //or any other extension
+                    link.setAttribute("image", "image.png"); //or any other extension
                     document.body.appendChild(link);
                     link.click();
                 });
