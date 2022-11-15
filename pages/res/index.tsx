@@ -86,7 +86,7 @@ export default function BasicTabs() {
                     const url = window.URL.createObjectURL(new Blob([buffer]));
                     const link = document.createElement("a");
                     link.href = url;
-                    link.setAttribute(name, "image.png"); //or any other extension
+                    link.setAttribute("Image", "image.png"); //or any other extension
                     document.body.appendChild(link);
                     link.click();
                 });
@@ -166,9 +166,9 @@ export default function BasicTabs() {
                                 <img width={1080} height={720} src={`/api/banner?img=${baseImage}&name=${p.name}&sale_price=${sale_price}&category=${category}&price=${price}&discount=${discount}&category_name=${categoryName}`} alt="" />
                                 <br />
                                 <a
-                                    href={`/api/product?img=${baseImage}&name=${p.name}&sale_price=${sale_price}&category=${category}&price=${price}&discount=${discount}`}
+                                    href={`/api/banner?img=${baseImage}&name=${p.name}&sale_price=${sale_price}&category=${category}&price=${price}&discount=${discount}`}
                                     onClick={e => download(e, p.name)}
-                                    style={{ margin: "3px", marginBottom: "6px" }}
+                                    style={{ margin: "19px", marginBottom: "30px" }}
                                 >
                                     download
                                 </a>
